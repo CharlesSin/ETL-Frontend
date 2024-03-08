@@ -25,8 +25,8 @@ function App() {
   const handleSubmit = async () => {
     setInfo("Backup Starting");
     await instance({
-      url: "/",
-      method: "GET",
+      url: "/expense/transferData",
+      method: "POST",
     })
       .then((response) => {
         console.log(response);

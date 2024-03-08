@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://nest-backend-pxkl.onrender.com",
+  baseURL: `${import.meta.env.VITE_DOMAIN_URL}`,
   headers: {
     "Content-Type": "application/json",
     timeout: 15000,
