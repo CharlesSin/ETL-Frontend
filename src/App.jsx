@@ -5,6 +5,7 @@ function App() {
   const [status, setStatus] = useState("LOADING");
   const [bakupError, setbakupError] = useState("");
   const [info, setInfo] = useState("ETL Data To MongoDB");
+  const version = __APP_VERSION__;
 
   useEffect(() => {
     const callServerlessAwake = async () => {
@@ -52,6 +53,7 @@ function App() {
         {info}
       </button>
       <h6 className="font-bold">{bakupError}</h6>
+      <span>Version:{version}</span>
     </main>
   );
 }
