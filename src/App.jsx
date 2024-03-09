@@ -30,7 +30,7 @@ function App() {
     })
       .then((response) => {
         console.log(response);
-        if (response.status == 200) {
+        if (response.status == 201) {
           setInfo("Backup Complete");
           setTimeout(() => {
             setInfo("ETL Data To MongoDB");
