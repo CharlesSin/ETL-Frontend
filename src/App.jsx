@@ -35,7 +35,7 @@ function App() {
           setInfo("Backup Complete");
           setTimeout(() => {
             setInfo("ETL Data To MongoDB");
-          }, 500);
+          }, 15000);
         }
       })
       .catch((error) => {
